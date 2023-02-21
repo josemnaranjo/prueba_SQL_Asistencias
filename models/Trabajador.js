@@ -13,10 +13,10 @@ export const Trabajador = sequelize.define('trabajador',{
         type:DataTypes.STRING
     },
     rut:{
-        type:DataTypes.CHAR,
+        type:DataTypes.STRING,
     },
 },{
-    timestaps:false
+    timestamps:false
 });
 
 Trabajador.hasMany(Jornadas,{

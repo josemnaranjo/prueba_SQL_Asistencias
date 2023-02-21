@@ -9,15 +9,15 @@ export const Jornadas = sequelize.define('jornada',{
         autoIncrement:true
     },
     date:{
-        type:DataTypes.DATE
+        type:DataTypes.STRING,
     },
     horaInicio:{
-        type:DataTypes.TIME
+        type:DataTypes.STRING,
     },
     horaFinal:{
-        type:DataTypes.TIME
+        type:DataTypes.STRING,
     }
 },{
-    timestaps:false
+    timestamps:false
 });
 
